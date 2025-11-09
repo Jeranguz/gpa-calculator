@@ -272,6 +272,19 @@
             line-height: 1.5;
         }
 
+        .import-example-image {
+            margin: 16px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #dee2e6;
+        }
+
+        .import-example-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -491,6 +504,12 @@
                     {mode === 'import' ? (
                         <div className="import-section">
                             <h3>Pega tus datos aquí</h3>
+                            <div className="import-info" style={{marginBottom: '12px'}}>
+                                💡 Puedes ir a tu expediente académico y seleccionar los cursos que necesites de esta forma:
+                            </div>
+                            <div className="import-example-image">
+                                <img src="./image.png" alt="Ejemplo de selección de cursos desde expediente académico" />
+                            </div>
                             <textarea
                                 placeholder="Ejemplo:\nTM6100\tTALLER DE MULTIMEDIA\t3\t3\tII 2024\tAPROBADO\t10.0\nTM6102\tPROGRAMACIÓN AVANZADA CON ASP.NET\t4\t2\tII 2024\tAPROBADO\t10.0"
                                 value={importText}
@@ -500,7 +519,7 @@
                                 📥 Importar Cursos
                             </button>
                             <div className="import-info">
-                                💡 Formato esperado: CÓDIGO | NOMBRE | CRÉDITOS | ... | SEMESTRE | ESTADO | NOTA<br/>
+                                Formato esperado: CÓDIGO | NOMBRE | CRÉDITOS | ... | SEMESTRE | ESTADO | NOTA<br/>
                                 Los datos deben estar separados por tabulaciones o múltiples espacios.
                             </div>
                         </div>
