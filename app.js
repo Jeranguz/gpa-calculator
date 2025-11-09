@@ -258,7 +258,7 @@ function App() {
                                     <label>Nota Final</label>
                                     <input
                                         type="number"
-                                        placeholder="Ej: 85"
+                                        placeholder="Ej: 9.5"
                                         min="0"
                                         max="100"
                                         step="0.01"
