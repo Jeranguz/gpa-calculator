@@ -300,6 +300,23 @@ function App() {
                     Total de créditos cursados: {getTotalCredits()}
                 </div>
             </div>
+
+            <footer className="footer">
+                <div className="footer-content">
+                    <p className="footer-name">Desarrollado por Jeremy Guzmán Vargas</p>
+                    <div className="footer-links">
+                        <a href="mailto:jeremyu4231@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+                            📧 Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeremygzm" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            💼 LinkedIn
+                        </a>
+                        <a href="https://github.com/Jeranguz" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            🐙 GitHub
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
