@@ -13,7 +13,7 @@ A React web application to calculate weighted GPA (Grade Point Average) based on
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Jeranguz/gpa-calculator
    cd gpa-calculator
    ```
 
