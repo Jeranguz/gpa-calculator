@@ -1,43 +1,86 @@
-# Calculadora de Promedio Ponderado
+# GPA Calculator
 
-Una aplicación web en React para calcular el promedio ponderado de notas universitarias basado en créditos.
+A React web application to calculate weighted GPA (Grade Point Average) based on course credits.
 
-## 🚀 Cómo usar
+## 🚀 Getting Started
 
-1. Abre el archivo `index.html` en tu navegador
-2. Ingresa los datos de tus cursos:
-   - **Nombre del Curso**: El nombre o código de la materia
-   - **Créditos**: Cantidad de créditos de la materia
-   - **Nota Final**: La calificación obtenida
-3. Usa el botón **"+ Agregar Curso"** para añadir más materias al semestre
-4. Usa el botón **"+ Agregar Semestre"** para añadir más semestres
-5. El promedio ponderado se calcula automáticamente
+### Prerequisites
 
-## 📊 Cálculo
+- Node.js (v14 or higher)
+- npm or yarn
 
-La aplicación calcula el promedio ponderado usando la fórmula:
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd gpa-calculator
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local development URL (typically `http://localhost:5173`)
+
+### Production Build
+
+To create a production build:
+```bash
+npm run build
+```
+
+To preview the production build:
+```bash
+npm run preview
+```
+
+## 📖 How to Use
+
+1. Enter your course information:
+   - **Course Name**: The name or code of the course
+   - **Credits**: Number of credits for the course
+   - **Final Grade**: The grade received
+2. Click **"+ Add Course"** to add more courses to a semester
+3. Click **"+ Add Semester"** to add additional semesters
+4. The weighted GPA is calculated automatically in real-time
+
+## 📊 Calculation Method
+
+The application calculates the weighted GPA using the formula:
 
 ```
-Promedio = (Σ(Nota × Créditos)) / (Σ Créditos)
+GPA = (Σ(Grade × Credits)) / (Σ Credits)
 ```
 
-Donde:
-- Multiplica la nota final de cada curso por su cantidad de créditos
-- Suma todos los resultados de esos productos
-- Divide la suma total entre el número total de créditos cursados
+Where:
+- Multiply the final grade of each course by its credit hours
+- Sum all the products
+- Divide the total by the total number of credits
 
-## ✨ Características
+## ✨ Features
 
-- ✅ Agregar múltiples cursos por semestre
-- ✅ Agregar múltiples semestres
-- ✅ Eliminar cursos y semestres
-- ✅ Cálculo automático en tiempo real
-- ✅ Interfaz moderna y responsiva
-- ✅ Sin necesidad de instalación (funciona directo en el navegador)
+- ✅ Add multiple courses per semester
+- ✅ Add multiple semesters
+- ✅ Delete courses and semesters
+- ✅ Real-time automatic calculation
+- ✅ Modern and responsive interface
+- ✅ No backend required (runs entirely in the browser)
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 
-- React 18
+- React 19
+- Vite 7
 - HTML5
 - CSS3
 - JavaScript (ES6+)
+
+## 📝 License
+
+This project is open source and available for personal and educational use.
